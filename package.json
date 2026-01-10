@@ -12,7 +12,7 @@
     "deploy": "gh-pages -d dist",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "deploy-storybook": "mkdir -p combined && cp -r dist/* combined/ && mkdir -p combined/storybook && cp -r storybook-static/* combined/storybook/ && rm -rf combined/storybook/.storybook && gh-pages -d combined"
+    "deploy-storybook": "mkdir -p storybook && cp -r storybook-static/* storybook/ && rm -rf storybook/.storybook && gh-pages -d storybook --add"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.18",
