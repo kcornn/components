@@ -4,12 +4,13 @@ import HomePage from "./pages/HomePage";
 import ButtonPage from "./pages/ButtonPage";
 import CardPage from "./pages/CardPage";
 import StepperPage from "./pages/StepperPage";
+import TokensPage from "./pages/TokensPage";
 import "./App.css";
 
 function App() {
-  const [page, setPage] = useState<"overview" | "button" | "card" | "stepper">(
-    "overview",
-  );
+  const [page, setPage] = useState<
+    "overview" | "button" | "card" | "stepper" | "tokens"
+  >("overview");
 
   return (
     <div className="w-[80vw] mx-auto text-slate-900 mt-6">
@@ -37,6 +38,7 @@ function App() {
               {page === "button" && <ButtonPage />}
               {page === "card" && <CardPage />}
               {page === "stepper" && <StepperPage />}
+              {page === "tokens" && <TokensPage />}
             </section>
           </div>
         </div>
