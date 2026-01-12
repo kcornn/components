@@ -1,6 +1,4 @@
-import React from "react";
-
-type PageKey = "overview" | "button" | "card" | "stepper";
+type PageKey = "overview" | "button" | "card" | "stepper" | "tokens";
 
 export function DocsSidebar({
   current,
@@ -14,6 +12,7 @@ export function DocsSidebar({
     { key: "button", label: "Button" },
     { key: "card", label: "Card" },
     { key: "stepper", label: "Progress Stepper" },
+    { key: "tokens", label: "Tokens" },
   ];
 
   return (
