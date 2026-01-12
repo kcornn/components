@@ -8,8 +8,9 @@ module.exports = {
     extend: {
       colors: {
         neutral: colors.slate,
-        primary: colors.teal,
-        secondary: colors.violet,
+        primary: colors.purple,
+        secondary: colors.rose,
+        accent: colors.emerald,
         surface: colors.slate,
         background: Object.assign({}, colors.slate, {
           DEFAULT: colors.slate[900],
