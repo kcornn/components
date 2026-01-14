@@ -1,4 +1,4 @@
-import { ColorGrid } from "../components";
+import { ColorGrid, DocsPage } from "../components";
 import {
   primaryColors,
   secondaryColors,
@@ -10,9 +10,7 @@ import {
 
 export default function TokensPage() {
   return (
-    <div>
-      <h2 className="text-2xl font-bold text-slate-900 mb-3">Tokens</h2>
-
+    <DocsPage title="Tokens">
       <section className="mb-8">
         <h3 className="text-lg font-semibold text-slate-800 mb-3">Colors</h3>
         <p className="text-slate-600 mb-4">
@@ -103,6 +101,6 @@ export default function TokensPage() {
           </code>
         </pre>
       </section>
-    </div>
+    </DocsPage>
   );
 }
