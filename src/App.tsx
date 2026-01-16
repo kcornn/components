@@ -3,18 +3,16 @@ import DocsSidebar from "./components/DocsSidebar";
 import HomePage from "./pages/HomePage";
 import ButtonPage from "./pages/ButtonPage";
 import CardPage from "./pages/CardPage";
-import StepperPage from "./pages/StepperPage";
 import TokensPage from "./pages/TokensPage";
 import "./App.css";
 
 function App() {
-  const [page, setPage] = useState<
-    "overview" | "button" | "card" | "stepper" | "tokens"
-  >("overview");
+  const [page, setPage] = useState<"overview" | "button" | "card" | "tokens">(
+    "overview",
+  );
 
   return (
     <div className="w-[80vw] mx-auto text-slate-900 mt-6">
-      {/* Header */}
       <header className="h-32 border-b border-slate-700/50">
         <div className="w-full px-6 h-full flex items-center justify-between">
           <div>
@@ -37,7 +35,6 @@ function App() {
               {page === "overview" && <HomePage />}
               {page === "button" && <ButtonPage />}
               {page === "card" && <CardPage />}
-              {page === "stepper" && <StepperPage />}
               {page === "tokens" && <TokensPage />}
             </section>
           </div>

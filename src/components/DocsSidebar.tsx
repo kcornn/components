@@ -1,4 +1,4 @@
-type PageKey = "overview" | "button" | "card" | "stepper" | "tokens";
+type PageKey = "overview" | "button" | "card" | "tokens";
 
 export function DocsSidebar({
   current,
@@ -11,7 +11,6 @@ export function DocsSidebar({
     { key: "overview", label: "Overview" },
     { key: "button", label: "Button" },
     { key: "card", label: "Card" },
-    { key: "stepper", label: "Progress Stepper" },
     { key: "tokens", label: "Tokens" },
   ];
 
