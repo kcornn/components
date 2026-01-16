@@ -1,4 +1,4 @@
-type PageKey = "overview" | "button" | "card" | "tokens";
+import { type PageKey } from "../types";
 
 export function DocsSidebar({
   current,

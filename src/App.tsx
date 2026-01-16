@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { type PageKey } from "./types";
 import DocsSidebar from "./components/DocsSidebar";
 import HomePage from "./pages/HomePage";
 import ButtonPage from "./pages/ButtonPage";
@@ -7,19 +8,16 @@ import TokensPage from "./pages/TokensPage";
 import "./App.css";
 
 function App() {
-  const [page, setPage] = useState<"overview" | "button" | "card" | "tokens">(
-    "overview",
-  );
+  const [page, setPage] = useState<PageKey>("overview");
 
   return (
     <div className="w-[80vw] mx-auto text-slate-900 mt-6">
-      <header className="h-32 border-b border-slate-700/50">
+      <header className="h-32 border-b border-slate-200">
         <div className="w-full px-6 h-full flex items-center justify-between">
           <div>
-            <h1 className="text-2xl font-bold text-slate-900">Design System</h1>
-            <p className="text-slate-600 text-sm">
-              Interactive Component Documentation
-            </p>
+            <h1 className="text-3xl font-bold text-slate-900 tracking-tight">
+              Component Library
+            </h1>
           </div>
         </div>
       </header>
