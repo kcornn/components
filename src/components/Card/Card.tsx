@@ -40,7 +40,7 @@ export const Card: React.FC<CardProps> = ({
         cardVariants[variant],
         cardPaddings[padding],
         hoverable && "hover:scale-[1.02] hover:shadow-xl cursor-pointer",
-        className
+        className,
       )}
       {...props}
     >
@@ -78,7 +78,7 @@ export const CardTitle: React.FC<CardTitleProps> = ({
       className={cn(
         "font-semibold text-white",
         cardTitleSizes[Component],
-        className
+        className,
       )}
       {...props}
     >
@@ -126,7 +126,7 @@ export const CardFooter: React.FC<CardFooterProps> = ({
     <div
       className={cn(
         "mt-4 pt-4 border-t border-neutral-700/50 flex items-center gap-3",
-        className
+        className,
       )}
       {...props}
     >
