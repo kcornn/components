@@ -11,9 +11,8 @@
     "format": "prettier --write .",
     "deploy": "gh-pages -d dist",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
-    "deploy-storybook": "mkdir -p storybook && cp -r storybook-static/* storybook/ && rm -rf storybook/.storybook && gh-pages -d storybook --add",
-    "deploy-all": "npm run build && npm run deploy && npm run build-storybook && node fix-storybook-base.js && npm run deploy-storybook"
+    "build-storybook": "storybook build -o dist/storybook",
+    "deploy-storybook": "npm run build-storybook && gh-pages -d dist/storybook --dest storybook --add"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",

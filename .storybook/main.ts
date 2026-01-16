@@ -10,11 +10,8 @@ const config: StorybookConfig = {
     "@storybook/addon-onboarding",
   ],
   framework: "@storybook/react-vite",
-  // Set the base URL for storybook
-  viteFinal: async (config, { configType }) => {
-    if (configType === "PRODUCTION") {
-      config.base = "/components/storybook/";
-    }
+  viteFinal: (config) => {
+    config.base = "/components/storybook/";
     return config;
   },
 };
