@@ -1,4 +1,0 @@
-import{j as t}from"./jsx-runtime-u17CrQMm.js";import{useMDXComponents as s}from"./index-BAZwYfqm.js";import{M as r,C as i,S as a,a as m}from"./blocks-DQzgaxsy.js";import{B as c,P as p}from"./Button.stories-D-dp-uQj.js";import"./iframe-CqveyfMA.js";import"./preload-helper-DUauIqh9.js";import"./index-Dg70yjq7.js";import"./Button-K0hHq2En.js";function e(o){const n={code:"code",p:"p",...s(),...o.components};return t.jsxs(t.Fragment,{children:[t.jsxs(n.p,{children:[t.jsx(r,{title:"Components/Button",of:c}),"# Button"]}),`
-`,t.jsxs(n.p,{children:["Use the interactive playground below to test ",t.jsx(n.code,{children:"Button"})," props."]}),`
-`,t.jsx(i,{children:t.jsx(a,{of:p})}),`
-`,t.jsx(m,{})]})}function M(o={}){const{wrapper:n}={...s(),...o.components};return n?t.jsx(n,{...o,children:t.jsx(e,{...o})}):e(o)}export{M as default};
