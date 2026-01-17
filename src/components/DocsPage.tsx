@@ -1,8 +1,6 @@
-import type { ReactNode } from "react";
-
 interface DocsPageProps {
   title: string;
-  children?: ReactNode;
+  children?: React.ReactNode;
   description?: string;
 }
 

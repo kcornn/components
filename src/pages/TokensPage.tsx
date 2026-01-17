@@ -1,4 +1,4 @@
-import { ColorGrid, DocsPage } from "../components";
+import { ColorGrid, DocsPage, Link } from "../components";
 import {
   primaryColors,
   secondaryColors,
@@ -15,13 +15,7 @@ export default function TokensPage() {
         <h3 className="text-lg font-semibold text-slate-800 mb-3">Colors</h3>
         <p className="text-slate-600 mb-4">
           Tailwind CSS{" "}
-          <a
-            href="https://tailwindcss.com/docs/colors"
-            target="_blank"
-            className="text-primary-600 hover:text-primary-700 underline"
-          >
-            color palette
-          </a>{" "}
+          <Link href="https://tailwindcss.com/docs/colors">color palette</Link>{" "}
           organized by semantic categories.
         </p>
 

@@ -5,6 +5,7 @@ import HomePage from "./pages/HomePage";
 import ButtonPage from "./pages/ButtonPage";
 import CardPage from "./pages/CardPage";
 import TokensPage from "./pages/TokensPage";
+import StorybookPage from "./pages/StorybookPage";
 import "./App.css";
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
               {page === "button" && <ButtonPage />}
               {page === "card" && <CardPage />}
               {page === "tokens" && <TokensPage />}
+              {page === "storybook" && <StorybookPage />}
             </section>
           </div>
         </div>

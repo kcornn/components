@@ -1,1 +1,1 @@
-export type PageKey = "overview" | "button" | "card" | "tokens";
+export type PageKey = "overview" | "button" | "card" | "tokens" | "storybook";

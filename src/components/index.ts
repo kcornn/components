@@ -9,3 +9,4 @@ export {
 } from "./Card/Card";
 export { ColorGrid } from "./TokenGrid/TokenGrid";
 export { DocsPage } from "./DocsPage";
+export { Link } from "./Link";

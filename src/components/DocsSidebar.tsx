@@ -12,6 +12,7 @@ export function DocsSidebar({
     { key: "button", label: "Button" },
     { key: "card", label: "Card" },
     { key: "tokens", label: "Tokens" },
+    { key: "storybook", label: "Storybook" },
   ];
 
   return (
