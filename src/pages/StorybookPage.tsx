@@ -8,7 +8,7 @@ export function StorybookPage() {
       description="This page provides access to the Storybook documentation and component playground."
     >
       <div>
-        <Link href="/storybook">Open Storybook in new tab</Link>
+        <Link href="/components/storybook">Open Storybook in new tab</Link>
       </div>
     </DocsPage>
   );
