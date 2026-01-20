@@ -1,4 +1,4 @@
-export { Button } from "./Button/Button";
+export { Button } from "./Button";
 export {
   Card,
   CardHeader,
@@ -7,6 +7,6 @@ export {
   CardContent,
   CardFooter,
 } from "./Card/Card";
-export { ColorGrid } from "./TokenGrid/TokenGrid";
+export { ColorGrid } from "./utils/TokenGrid";
 export { DocsPage } from "./DocsPage";
-export { Link } from "./Link";
+export { Link, LinkExternal } from "./Link";

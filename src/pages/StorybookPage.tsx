@@ -1,5 +1,5 @@
 import { DocsPage } from "../components/DocsPage";
-import { Link } from "../components/Link";
+import { LinkExternal } from "../components/Link";
 
 export function StorybookPage() {
   return (
@@ -8,7 +8,9 @@ export function StorybookPage() {
       description="This page provides access to the Storybook documentation and component playground."
     >
       <div>
-        <Link href="/components/storybook">Open Storybook in new tab</Link>
+        <LinkExternal href="/components/storybook">
+          Open Storybook in new tab
+        </LinkExternal>
       </div>
     </DocsPage>
   );
