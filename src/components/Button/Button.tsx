@@ -6,8 +6,13 @@ import AutorenewIcon from "@mui/icons-material/Autorenew";
 const base =
   "inline-flex items-center justify-center font-medium rounded-xl transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-slate-900 disabled:opacity-50 disabled:cursor-not-allowed";
 
+const shimmerBase =
+  "relative overflow-hidden text-slate-500 bg-slate-200 border border-slate-200";
+const shimmerGlow =
+  "before:absolute before:inset-0 before:-translate-x-full before:animate-shimmer before:bg-[linear-gradient(110deg,transparent_30%,rgba(255,255,255,0.35)_50%,transparent_70%)] before:content-['']";
+
 const getVariantClasses = (
-  variant: "primary" | "primaryShadow" | "secondary" | "tertiary",
+  variant: "primary" | "primaryShadow" | "secondary" | "tertiary" | "shimmer",
   colorPalette: string = "primary",
 ) => {
   // Primary palette classes (purple)
@@ -20,6 +25,7 @@ const getVariantClasses = (
       "bg-transparent hover:bg-primary-50 text-primary-600 border border-primary-500 focus:ring-primary-300",
     tertiary:
       "bg-transparent hover:bg-primary-50 text-primary-600 focus:ring-primary-300",
+    shimmer: "focus:ring-slate-300",
   };
 
   // Secondary palette classes (rose)
@@ -32,6 +38,7 @@ const getVariantClasses = (
       "bg-transparent hover:bg-secondary-50 text-secondary-600 border border-secondary-500 focus:ring-secondary-300",
     tertiary:
       "bg-transparent hover:bg-secondary-50 text-secondary-600 focus:ring-secondary-300",
+    shimmer: "focus:ring-slate-300",
   };
 
   // Return the appropriate palette based on colorPalette prop
@@ -65,6 +72,8 @@ export const Button: React.FC<ButtonProps> = ({
       className={cn(
         base,
         getVariantClasses(variant, colorPalette),
+        variant === "shimmer" && shimmerBase,
+        variant === "shimmer" && shimmerGlow,
         sizes[size],
         className,
       )}

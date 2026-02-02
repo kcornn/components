@@ -31,6 +31,11 @@ export default function ButtonPage() {
             <Button variant="primary">Primary</Button>
             <Button variant="secondary">Secondary</Button>
             <Button variant="tertiary">Tertiary</Button>
+            <Button
+              variant="shimmer"
+              aria-label="Loading"
+              className="w-24 h-12"
+            />
           </div>
 
           <div className="mb-6">

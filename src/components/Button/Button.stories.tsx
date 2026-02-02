@@ -16,7 +16,7 @@ const meta = {
   argTypes: {
     variant: {
       control: "select",
-      options: ["primary", "primaryShadow", "secondary", "tertiary"],
+      options: ["primary", "primaryShadow", "secondary", "tertiary", "shimmer"],
     },
     colorPalette: {
       control: "select",
@@ -62,6 +62,24 @@ export const Tertiary: Story = {
   args: {
     variant: "tertiary",
     children: "Tertiary",
+  },
+};
+
+export const Shimmer: Story = {
+  name: "Shimmer",
+  args: {
+    variant: "shimmer",
+    children: "Loading",
+  },
+};
+
+export const ShimmerBlock: Story = {
+  name: "Shimmer (No Text)",
+  args: {
+    variant: "shimmer",
+    "aria-label": "Loading",
+    children: "",
+    className: "w-40 h-12",
   },
 };
 

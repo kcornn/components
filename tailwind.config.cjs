@@ -6,6 +6,15 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      keyframes: {
+        shimmer: {
+          "0%": { transform: "translateX(-160%) rotate(12deg)" },
+          "100%": { transform: "translateX(160%) rotate(12deg)" },
+        },
+      },
+      animation: {
+        shimmer: "shimmer 1.6s infinite",
+      },
       colors: {
         neutral: colors.slate,
         primary: colors.purple,

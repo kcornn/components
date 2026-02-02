@@ -18,3 +18,7 @@ Setting up my own custom design system + docs page! This is also a way for me to
 - [Shadcn](https://ui.shadcn.com/)
 - [Chakra UI](https://chakra-ui.com/)
 - [Kaizen](https://cultureamp.design/?path=/docs/introduction-welcome--docs)
+
+## Ref
+
+- https://github.com/tailwindlabs/tailwindcss/discussions/3363
